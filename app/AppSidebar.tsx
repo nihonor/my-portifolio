@@ -32,7 +32,7 @@ import { title } from "process";
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Zap,
   },
   {

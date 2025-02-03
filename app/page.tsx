@@ -1,11 +1,12 @@
 import Card from "@/components/Card";
-
+import vercel from "../public/Vercel Logo.jpg";
+import tailwind from "../public/Tailwind CSS Wordmark Logo PNG Vector (SVG) Free Download.jpg";
 export default function Home() {
   const projectCards = [
     {
       title: "Dental Clinic",
       description: "A web app for managing a dental clinic.",
-      img: "/proj.jpg", // Replace with the correct image path
+      img: "/medi.png", // Replace with the correct image path
       link: "https://example.com/dental-clinic",
       technologies: ["Next.js", "Tailwind CSS", "Node.js", "CSS"],
     },
@@ -18,10 +19,17 @@ export default function Home() {
     },
     {
       title: "Supamenu",
-      description: "An paltform where you can make orders on a certain restaurant",
+      description:
+        "An paltform where you can make orders on a certain restaurant",
       img: "/image.png", // Replace with the correct image path
       link: "https://example.com/e-commerce",
-      technologies: ["React", "Express.js", "MongoDB", "TailwindCSS","Node.js"],
+      technologies: [
+        "React",
+        "Express.js",
+        "MongoDB",
+        "TailwindCSS",
+        "Node.js",
+      ],
     },
   ];
   return (
@@ -50,6 +58,14 @@ export default function Home() {
               technologies={project.technologies}
             />
           ))}
+        </div>
+
+        <div className="pt-24 text-subhead font-bold ">
+          <h1>Tech stack</h1>
+          <div className="flex gap-2">
+            <img src={vercel.src} className="w-32 h-20 object-cover" alt="" />
+            <img src={tailwind.src} className="w-32 h-20 object-cover" alt="" />
+          </div>
         </div>
       </div>
     </>

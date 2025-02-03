@@ -11,9 +11,11 @@ import {
   Settings,
   Zap,
   BriefcaseBusiness,
+  Microchip,
 } from "lucide-react";
+
 import Image from "next/image";
-import profilePic from "../public/honor.png"
+import profilePic from "../public/honor.png";
 import { CiLinkedin } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import {
@@ -42,7 +44,7 @@ const items = [
   },
   {
     title: "Projects",
-    url: "#",
+    url: "/projects",
     icon: BriefcaseBusiness,
   },
   {
@@ -54,6 +56,11 @@ const items = [
     title: "Resume",
     url: "#",
     icon: FileUser,
+  },
+  {
+    title: "Tech stacks",
+    url: "#",
+    icon: Microchip,
   },
 ];
 
@@ -82,9 +89,15 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupLabel className="my-8 ">
             {/* <div><img src="" alt="Honore image"/></div> */}
-            <Image src={profilePic} alt="Honore image"width={45} className="rounded-full object-cover"/>
-            <div ><h2 className="font-bold text-sm text-gray-600 ">N.Honore</h2>
-            <p className="text-[13px]">Software developer & Cyber expert</p>
+            <Image
+              src={profilePic}
+              alt="Honore image"
+              width={45}
+              className="rounded-full object-cover"
+            />
+            <div>
+              <h2 className="font-bold text-sm text-gray-600 ">N.Honore</h2>
+              <p className="text-[13px]">Software developer & Cyber expert</p>
             </div>
           </SidebarGroupLabel>
           <SidebarGroupContent>

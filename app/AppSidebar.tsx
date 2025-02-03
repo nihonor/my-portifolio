@@ -27,6 +27,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+
 } from "@/components/ui/sidebar";
 import { title } from "process";
 
@@ -48,8 +49,8 @@ const items = [
     icon: BriefcaseBusiness,
   },
   {
-    title: "Certificates",
-    url: "#",
+    title: "Certifications",
+    url: "/certificate",
     icon: BookText,
   },
   {
@@ -95,11 +96,12 @@ export function AppSidebar() {
               width={45}
               className="rounded-full object-cover"
             />
-            <div>
+            <div className="pl-1">
               <h2 className="font-bold text-sm text-gray-600 ">N.Honore</h2>
               <p className="text-[13px]">Software developer & Cyber expert</p>
             </div>
           </SidebarGroupLabel>
+         
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

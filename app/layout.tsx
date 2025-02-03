@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AppSidebar } from "./AppSidebar";
 import { Sidebar } from "lucide-react";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,10 +32,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-sidebar`}
       >
         <SidebarProvider>
+        
           <AppSidebar />
+         
           <main className="p-5 bg-white md:mt-3 md:pt-32 shadow-lg rounded-tl-lg w-full">
+         
             {children}
+          
           </main>
+         
         </SidebarProvider>
       </body>
     </html>

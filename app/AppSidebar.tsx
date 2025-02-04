@@ -1,3 +1,4 @@
+"use client";
 import {
   Calendar,
   Linkedin,
@@ -13,7 +14,6 @@ import {
   BriefcaseBusiness,
   Microchip,
 } from "lucide-react";
-
 import Image from "next/image";
 import profilePic from "../public/honor.png";
 import { CiLinkedin } from "react-icons/ci";
@@ -27,9 +27,8 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-
 } from "@/components/ui/sidebar";
-import { title } from "process";
+import { usePathname } from "next/navigation"; // Import usePathname hook
 
 // Menu items.
 const items = [
@@ -55,7 +54,7 @@ const items = [
   },
   {
     title: "Resume",
-    url: "#",
+    url: "/resume",
     icon: FileUser,
   },
   {
@@ -73,7 +72,7 @@ const socials = [
   },
   {
     title: "Github",
-    url: "#",
+    url: "https://github.com/nihonor",
     icon: Github,
   },
   {
@@ -84,12 +83,13 @@ const socials = [
 ];
 
 export function AppSidebar() {
+  const pathname = usePathname(); // Get the current pathname from the router
+
   return (
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="my-8 ">
-            {/* <div><img src="" alt="Honore image"/></div> */}
             <Image
               src={profilePic}
               alt="Honore image"
@@ -101,13 +101,20 @@ export function AppSidebar() {
               <p className="text-[13px]">Software developer & Cyber expert</p>
             </div>
           </SidebarGroupLabel>
-         
+
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <a
+                      href={item.url}
+                      className={`flex items-center space-x-2 p-2 rounded-md ${
+                        pathname === item.url
+                          ? "bg-white shadow-lg"
+                          : "text-gray-600 hover:bg-white"
+                      }`}
+                    >
                       <item.icon />
                       <span>{item.title}</span>
                     </a>
@@ -118,9 +125,10 @@ export function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
+
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel className="font-bold text-sm font text-gray-600">
+          <SidebarGroupLabel className="font-bold text-sm text-gray-600">
             Socials
           </SidebarGroupLabel>
           <SidebarGroupContent>
@@ -128,7 +136,14 @@ export function AppSidebar() {
               {socials.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <a
+                      href={item.url}
+                      className={`flex items-center space-x-2 p-2 rounded-md ${
+                        pathname === item.url
+                          ? "bg-white shadow-lg"
+                          : "text-gray-600 hover:bg-white"
+                      }`}
+                    >
                       <item.icon />
                       <span>{item.title}</span>
                     </a>

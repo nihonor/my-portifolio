@@ -59,7 +59,7 @@ const items = [
   },
   {
     title: "Tech stacks",
-    url: "#",
+    url: "/techstack",
     icon: Microchip,
   },
 ];

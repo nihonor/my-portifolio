@@ -1,7 +1,4 @@
 import React from "react";
-import clinic from "../public/proj.jpg";
-import Image from "next/image";
-import { Box } from "lucide-react";
 import BoxBtn from "./BoxBtn";
 interface CardItems {
   title: string;

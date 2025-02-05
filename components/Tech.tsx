@@ -1,6 +1,5 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-import react from "../public/react.png";
 import { motion } from "framer-motion";
 import { Progress } from "@/components/ui/progress";
 

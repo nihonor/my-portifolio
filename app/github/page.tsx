@@ -82,7 +82,7 @@ const Page = () => {
         <div className="mt-16 bg-gray-800 text-white p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Contributions</h2>
           <p className="text-lg">
-            I'm an active contributor to several open-source projects. Check out some of my contributions on GitHub!
+            I&apos;m an active contributor to several open-source projects. Check out some of my contributions on GitHub!
           </p>
           <div className="flex space-x-6 mt-6">
             <a

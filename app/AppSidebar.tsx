@@ -1,15 +1,9 @@
 "use client";
 import {
-  Calendar,
-  Linkedin,
   Github,
   FileUser,
   BookText,
   MessageSquareText,
-  Home,
-  Inbox,
-  Search,
-  Settings,
   Zap,
   BriefcaseBusiness,
   Microchip,

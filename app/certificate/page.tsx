@@ -1,6 +1,4 @@
-import { Link, SquareArrowOutUpRight } from "lucide-react";
 import React from "react";
-import { Image } from "lucide-react";
 import coursera from "../../public/cour.png";
 import Certificate from "@/components/Certificate";
 
@@ -15,7 +13,7 @@ const CertficatePage = () => {
      
         <Certificate
           imageSrc={coursera.src}
-          altText="Coursera certifcate"
+          altText="Coursera certificate"
           link="https://coursera.org/share/7c680816af7ccc17b930207090faf30b"
           title="Wordpress"
         />

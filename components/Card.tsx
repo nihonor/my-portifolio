@@ -7,7 +7,7 @@ interface CardItems {
   link: string;
   technologies: string[];
 }
-const Card = ({ title, description, img, link, technologies }: CardItems) => {
+const Card = ({ title, description, img, technologies }: CardItems) => {
   return (
     <div className="flex gap-4 mt-12 hover:bg-gray-100 rounded-lg">
       <img

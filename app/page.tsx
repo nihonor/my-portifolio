@@ -39,14 +39,14 @@ export default function Home() {
           I am NIYITANGA HONORE
         </h1>
         <p className="md:pr-40 py-6 text-content mb-6">
-          I’m Niyitanga Honore, a curious and driven individual passionate about
+          I&apos;m Niyitanga Honore, a curious and driven individual passionate about
           technology, cybersecurity, and software development. I thrive on
           solving challenges, from penetration testing and malware analysis to
           building full-stack web applications with React, Node.js, and Next.js{" "}
         </p>
         <div>
           <h1 className="pt-4 font-bold text-subhead">
-            What I've been working on
+            What I&apos;ve been working on
           </h1>
           {projectCards.map((project, index) => (
             <Card

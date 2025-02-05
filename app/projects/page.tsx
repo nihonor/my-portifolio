@@ -36,7 +36,7 @@ const ProjectPage = () => {
     <div className="md:mx-48 md:mr-64">
       <h1 className="text-4xl">⚡</h1>
       <h1 className="text-4xl font-bold text-subhead">
-        What I've been working on
+        What I&apos;ve been working on
       </h1>
       {projectCards.map((project, index) => (
         <Card

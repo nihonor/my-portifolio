@@ -60,13 +60,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="pt-24 text-subhead font-bold ">
-          <h1>Tech stack</h1>
-          <div className="flex gap-2">
-            <img src={vercel.src} className="w-32 h-20 object-cover" alt="" />
-            <img src={tailwind.src} className="w-32 h-20 object-cover" alt="" />
-          </div>
-        </div>
+        
       </div>
     </>
   );

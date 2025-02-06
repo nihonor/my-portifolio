@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
 import { SquareArrowOutUpRight } from "lucide-react";
+import Image from "next/image";
 
 interface CertificateProps {
   imageSrc: string;
@@ -8,15 +9,15 @@ interface CertificateProps {
   title: string;
 }
 
-const Certificate: React.FC<CertificateProps> = ({ imageSrc, altText, link, title }) => {
+const Certificate: React.FC<CertificateProps> = ({
+  imageSrc,
+  altText,
+  link,
+  title,
+}) => {
   return (
     <div className="hover:bg-gray-100 p-4">
-      <img
-        src={imageSrc}
-        alt={altText}
-        width={400}
-        height={400}
-      />
+      <Image src={imageSrc} alt={altText} width={450} height={400} />
 
       <a
         href={link}

@@ -1,6 +1,4 @@
 import Card from "@/components/Card";
-import vercel from "../public/Vercel Logo.jpg";
-import tailwind from "../public/Tailwind CSS Wordmark Logo PNG Vector (SVG) Free Download.jpg";
 export default function Home() {
   const projectCards = [
     {

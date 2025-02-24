@@ -28,6 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
     <script src="//code.tidio.co/wmngcm35jskxetaitvzjs1vp6wtkqvfk.js" async></script>
+    <head>
+    <meta name="google-site-verification" content="CXSVtZPrztpaqeebVRaqW3MPy4akFo82vLmTHmvfb88" />
+    </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased  bg-sidebar`}
       >

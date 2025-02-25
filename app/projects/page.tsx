@@ -27,8 +27,7 @@ const ProjectPage = () => {
         "React",
         "Express.js",
         "MongoDB",
-        "TailwindCSS",
-        "Node.js",
+        "TailwindCSS"
       ],
     },
   ];

@@ -1,18 +1,5 @@
 "use client";
 import {
-  Github,
-  FileUser,
-  BookText,
-  MessageSquareText,
-  Zap,
-  BriefcaseBusiness,
-  Microchip,
-} from "lucide-react";
-import Image from "next/image";
-import profilePic from "../public/honor.png";
-import { CiLinkedin } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
-import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
@@ -20,9 +7,22 @@ import {
   SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem,
+  SidebarMenuItem
 } from "@/components/ui/sidebar";
-import { usePathname } from "next/navigation"; // Import usePathname hook
+import {
+  BookText,
+  BriefcaseBusiness,
+  FileUser,
+  Github,
+  MessageSquareText,
+  Microchip,
+  Zap,
+} from "lucide-react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { CiLinkedin } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+import profilePic from "../public/honor.png";
 
 // Menu items.
 const items = [
@@ -77,10 +77,16 @@ const socials = [
 ];
 
 export function AppSidebar() {
-  const pathname = usePathname(); // Get the current pathname from the router
+  const [pathname, setPathname] = useState("");
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+  }, []);
 
   return (
+    
     <Sidebar>
+       
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="my-8 ">

@@ -25,15 +25,15 @@ export default function Home() {
         "React",
         "Express.js",
         "MongoDB",
-        "TailwindCSS",
-        "Node.js",
+        "TailwindCSS"
+        
       ],
     },
   ];
   return (
     <>
-      <div className="flx justify-center md:mx-48 md:mr-64">
-        <h1 className=" text-3xl font-bold text-subhead">
+      <div className=" md:mx-48 md:mr-64">
+        <h1 className=" text-3xl font-bold text-subhead ">
           I am NIYITANGA HONORE
         </h1>
         <p className="md:pr-40 py-6 text-content mb-6">

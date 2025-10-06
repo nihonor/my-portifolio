@@ -9,21 +9,19 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import profilePic from "@/public/honor.png";
 import {
   BookText,
   BriefcaseBusiness,
-  FileUser,
   Github,
   MessageSquareText,
   Microchip,
-  Zap,
+  Zap
 } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-import profilePic from "@/public/honor.png";
-import delay from "delay";
 
 // Menu items.
 const items = [

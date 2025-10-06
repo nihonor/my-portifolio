@@ -1,7 +1,7 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { AppSidebar } from "./AppSidebar";
+import { AppSidebar } from "./sidebar/AppSidebar";
 import "./globals.css";
 import React from "react";
 

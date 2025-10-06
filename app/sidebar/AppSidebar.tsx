@@ -7,7 +7,7 @@ import {
   SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem
+  SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import {
   BookText,
@@ -22,7 +22,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-import profilePic from "../public/honor.png";
+import profilePic from "@/public/honor.png";
+import delay from "delay";
 
 // Menu items.
 const items = [
@@ -46,11 +47,11 @@ const items = [
     url: "/certificate",
     icon: BookText,
   },
-  {
-    title: "Resume",
-    url: "/resume",
-    icon: FileUser,
-  },
+  // {
+  //   title: "Resume",
+  //   url: "/resume",
+  //   icon: FileUser,
+  // },
   {
     title: "Tech stacks",
     url: "/techstack",
@@ -84,9 +85,7 @@ export function AppSidebar() {
   }, []);
 
   return (
-    
     <Sidebar>
-       
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel className="my-8 ">

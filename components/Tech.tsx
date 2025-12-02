@@ -1,7 +1,5 @@
-import React from "react";
-import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
-import { Progress } from "@/components/ui/progress";
+import Image, { StaticImageData } from "next/image";
 
 interface TechCard {
   name: string;

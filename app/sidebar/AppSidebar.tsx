@@ -10,6 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { useTheme } from "@/contexts/ThemeContext";
 import {
   BookText,
   BriefcaseBusiness,
@@ -23,7 +24,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import { useTheme } from "@/contexts/ThemeContext";
 
 // Menu items
 const items = [

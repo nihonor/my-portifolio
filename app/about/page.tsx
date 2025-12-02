@@ -1,15 +1,14 @@
 "use client";
 
-import React from "react";
-import SectionHeader from "@/components/SectionHeader";
 import PhotoGallery from "@/components/PhotoGallery";
+import SectionHeader from "@/components/SectionHeader";
 
 const page = () => {
   // Replace these with your actual event photos and details
   const eventPhotos = [
     {
       src: "/honor.png",
-      alt: "Tech conference presentation",
+      alt: "Tech conference presentatio",
       eventName: "Tech Summit 2024",
       date: "March 15, 2024",
       location: "Kigali, Rwanda",

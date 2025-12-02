@@ -1,8 +1,8 @@
 "use client";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "./sidebar/AppSidebar";
 import { ThemeProvider, useTheme } from "@/contexts/ThemeContext";
 import React from "react";
+import { AppSidebar } from "./sidebar/AppSidebar";
 
 function ThemedLayout({ children }: { children: React.ReactNode }) {
     const { theme } = useTheme();

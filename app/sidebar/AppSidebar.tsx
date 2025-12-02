@@ -88,16 +88,17 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupLabel className="my-8 ">
             <Image
-              src={profilePic}
+              src="/honor.png"
               alt="Honore image"
               width={45}
+              height={45}
               className="rounded-full object-cover"
             />
             <div className="pl-1">
               <h2 className="font-bold text-sm text-gray-600 ">N.Honore</h2>
               <p className="text-[13px]">Software developer & Cyber expert</p>
             </div>
-          </div>
+          </SidebarGroupLabel>
 
           <SidebarGroupContent>
             <SidebarMenu>

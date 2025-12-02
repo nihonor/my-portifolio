@@ -1,7 +1,38 @@
+"use client";
+
 import React from "react";
 import SectionHeader from "@/components/SectionHeader";
+import PhotoGallery from "@/components/PhotoGallery";
 
 const page = () => {
+  // Replace these with your actual event photos and details
+  const eventPhotos = [
+    {
+      src: "/honor.png",
+      alt: "Tech conference presentation",
+      eventName: "Tech Summit 2024",
+      date: "March 15, 2024",
+      location: "Kigali, Rwanda",
+      description: "Presented on modern web security practices and ethical hacking techniques to an audience of 200+ developers."
+    },
+    {
+      src: "/pro.png",
+      alt: "Cybersecurity workshop",
+      eventName: "CyberSec Workshop",
+      date: "January 20, 2024",
+      location: "Innovation Hub, Kigali",
+      description: "Led a hands-on workshop on penetration testing and vulnerability assessment for aspiring security professionals."
+    },
+    {
+      src: "/hack.png",
+      alt: "Hackathon participation",
+      eventName: "RCA Hackathon 2025",
+      date: "October 26, 2025",
+      location: "NISR, Kigali",
+      description: " Build a tool to detect vulnerabilities within web applications that won 3rd place."
+    },
+  ];
+
   return (
     <div className="md:mx-48 md:mr-64 animate-fade-in">
       <SectionHeader
@@ -52,6 +83,13 @@ const page = () => {
           both functional and resilient.
         </p>
       </div>
+
+      {/* Event Photo Gallery Section */}
+      <PhotoGallery
+        photos={eventPhotos}
+        title="📸 My Journey"
+        subtitle="Events, conferences, and workshops I've attended and contributed to"
+      />
     </div>
   );
 };

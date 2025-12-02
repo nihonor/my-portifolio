@@ -8,7 +8,7 @@ const CybersecurityPage = () => {
     const [currentSection, setCurrentSection] = useState(0);
     const [commandHistory, setCommandHistory] = useState<string[]>([]);
     const [currentCommand, setCurrentCommand] = useState("");
-    const [output, setOutput] = useState<Array<{ type: string; content: string | JSX.Element }>>([]);
+   const [output, setOutput] = useState<Array<{ type: string; content: string | React.ReactNode }>>([]);
     const inputRef = useRef<HTMLInputElement>(null);
     const terminalEndRef = useRef<HTMLDivElement>(null);
 

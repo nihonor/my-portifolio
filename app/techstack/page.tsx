@@ -9,16 +9,19 @@ import next from "../../public/next.png";
 import c from "../../public/c.png";
 import mongo from "../../public/mongo.jpg";
 import java from "../../public/jav.webp";
+import SectionHeader from "@/components/SectionHeader";
 
 const TechStack = () => {
   return (
-    <div className="md:mx-48 md:mr-64">
-      <div className="py-3">
-        <h1 className="text-4xl">🧑‍💻🧑🏻‍💻🧑🏾‍💻🧑🏾‍💻</h1>
-        <h1 className="text-4xl font-bold text-subhead">Tech am using..</h1>
-      </div>
+    <div className="md:mx-48 md:mr-64 animate-fade-in">
+      <SectionHeader
+        emoji="🧑‍💻"
+        title="Tech I'm using"
+        gradientFrom="from-purple-600"
+        gradientTo="to-blue-600"
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Tech image={react} name="Reactjs" proficiency={83} />
         <Tech image={Node} name="Nodejs" proficiency={80} />
         <Tech image={js} name="Javascript" proficiency={92} />
@@ -27,10 +30,10 @@ const TechStack = () => {
         <Tech image={c} name="C++" proficiency={70} />
         <Tech image={mongo} name="MongoDB" proficiency={90} />
         <Tech image={java} name="Java" proficiency={60} />
-        <Tech image={express} name="Expressjs" proficiency={90} />
       </div>
     </div>
   );
 };
 
 export default TechStack;
+

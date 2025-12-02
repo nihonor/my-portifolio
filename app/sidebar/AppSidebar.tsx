@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Sidebar,
   SidebarContent,
@@ -9,21 +10,22 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import profilePic from "@/public/honor.png";
 import {
   BookText,
   BriefcaseBusiness,
   Github,
   MessageSquareText,
   Microchip,
+  Shield,
   Zap
 } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { CiLinkedin } from "react-icons/ci";
-import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useTheme } from "@/contexts/ThemeContext";
 
-// Menu items.
+// Menu items
 const items = [
   {
     title: "Home",
@@ -41,15 +43,15 @@ const items = [
     icon: BriefcaseBusiness,
   },
   {
+    title: "Cybersecurity",
+    url: "/cybersecurity",
+    icon: Shield,
+  },
+  {
     title: "Certifications",
     url: "/certificate",
     icon: BookText,
   },
-  // {
-  //   title: "Resume",
-  //   url: "/resume",
-  //   icon: FileUser,
-  // },
   {
     title: "Tech stacks",
     url: "/techstack",
@@ -57,11 +59,11 @@ const items = [
   },
 ];
 
-const socials = [
+const socialMedia = [
   {
     title: "LinkedIn",
-    url: "#",
-    icon: CiLinkedin,
+    url: "https://www.linkedin.com/in/niyitanga-honore",
+    icon: FaLinkedin,
   },
   {
     title: "Github",
@@ -69,22 +71,20 @@ const socials = [
     icon: Github,
   },
   {
-    title: "WhatsApp",
-    url: "#",
-    icon: FaWhatsapp,
+    title: "Twitter",
+    url: "https://twitter.com",
+    icon: FaTwitter,
   },
 ];
 
 export function AppSidebar() {
-  const [pathname, setPathname] = useState("");
-
-  useEffect(() => {
-    setPathname(window.location.pathname);
-  }, []);
+  const pathname = usePathname();
+  const { theme } = useTheme();
+  const isCyber = theme === "cyber";
 
   return (
-    <Sidebar>
-      <SidebarContent>
+    <Sidebar className={isCyber ? "bg-black/90 border-r-2 border-green-500/30" : ""}>
+      <SidebarContent className={isCyber ? "bg-black/90" : ""}>
         <SidebarGroup>
           <SidebarGroupLabel className="my-8 ">
             <Image
@@ -97,52 +97,65 @@ export function AppSidebar() {
               <h2 className="font-bold text-sm text-gray-600 ">N.Honore</h2>
               <p className="text-[13px]">Software developer & Cyber expert</p>
             </div>
-          </SidebarGroupLabel>
+          </div>
 
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <a
-                      href={item.url}
-                      className={`flex items-center space-x-2 p-2 rounded-md ${
-                        pathname === item.url
-                          ? "bg-white shadow-lg"
-                          : "text-gray-600 hover:bg-white"
-                      }`}
+              {items.map((item) => {
+                const isActive = pathname === item.url;
+                return (
+                  <SidebarMenuItem key={item.title}>
+                    <SidebarMenuButton
+                      asChild
+                      className={`transition-all duration-300 rounded-xl px-4 py-3 my-1
+                        ${isActive
+                          ? isCyber
+                            ? "bg-gradient-to-r from-green-600/30 to-cyan-600/30 text-cyan-400 shadow-lg shadow-green-500/20 border border-green-500/50"
+                            : "bg-gradient-to-r from-blue-600 to-teal-600 text-white shadow-lg shadow-blue-500/30"
+                          : isCyber
+                            ? "hover:bg-green-500/10 text-green-300 hover:text-cyan-400"
+                            : "hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50 hover:text-blue-700"
+                        }`}
                     >
-                      <item.icon />
-                      <span>{item.title}</span>
-                    </a>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
+                      <Link href={item.url} className="flex items-center gap-3">
+                        <item.icon
+                          className={`transition-all duration-300 ${isActive && !isCyber ? "animate-float text-white" : ""} ${isActive && isCyber ? "text-cyan-400 animate-pulse" : ""
+                            }`}
+                        />
+                        <span className={isCyber ? "font-mono" : "font-medium"}>{item.title}</span>
+                      </Link>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                );
+              })}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-      </SidebarContent>
 
-      <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel className="font-bold text-sm text-gray-600">
-            Socials
+          <SidebarGroupLabel className={isCyber ? "text-green-400 font-mono" : "text-slate-700 font-semibold"}>
+            Social Media
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {socials.map((item) => (
+              {socialMedia.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton
+                    asChild
+                    className={`transition-all duration-300 rounded-xl px-4 py-2 my-1
+                      ${isCyber
+                        ? "hover:bg-green-500/10 text-green-300 hover:text-cyan-400"
+                        : "hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50 hover:text-blue-700"
+                      }`}
+                  >
                     <a
                       href={item.url}
-                      className={`flex items-center space-x-2 p-2 rounded-md ${
-                        pathname === item.url
-                          ? "bg-white shadow-lg"
-                          : "text-gray-600 hover:bg-white"
-                      }`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3"
                     >
-                      <item.icon />
-                      <span>{item.title}</span>
+                      <item.icon className={isCyber ? "text-cyan-400" : "text-slate-600"} />
+                      <span className={isCyber ? "font-mono" : "font-medium"}>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

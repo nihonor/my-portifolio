@@ -12,8 +12,14 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-			subhead:'#000000',
-			content:'#000000',
+			subhead:'#1a1a1a',
+			content:'#4a4a4a',
+			gradient: {
+				purple: 'hsl(var(--gradient-purple))',
+				blue: 'hsl(var(--gradient-blue))',
+				pink: 'hsl(var(--gradient-pink))',
+				cyan: 'hsl(var(--gradient-cyan))',
+			},
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -67,7 +73,12 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		animation: {
+			'fade-in': 'fade-in 0.6s ease-out forwards',
+			'slide-in': 'slide-in 0.6s ease-out forwards',
+			'float': 'float 3s ease-in-out infinite',
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

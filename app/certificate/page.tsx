@@ -5,15 +5,19 @@ import netresearch from "../../public/netr.png";
 import intro from "../../public/intro.png";
 import linux from "../../public/linux.png";
 import python from "../../public/python.png";
+import SectionHeader from "@/components/SectionHeader";
 
 const CertficatePage = () => {
   return (
-    <div className="md:mx-48 md:mr-64">
-      <h1 className="text-4xl">⚡</h1>
-      <h1 className="text-4xl font-bold text-subhead pb-6">
-        What I have been learning recently
-      </h1>
-      <div className="md:grid grid-cols-2 ">
+    <div className="md:mx-48 md:mr-64 animate-fade-in">
+      <SectionHeader
+        emoji="📜"
+        title="What I have been learning recently"
+        gradientFrom="from-purple-600"
+        gradientTo="to-blue-600"
+      />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Certificate
           imageSrc={coursera.src}
           altText="Coursera certificate"
@@ -32,13 +36,13 @@ const CertficatePage = () => {
           link="https://drive.google.com/file/d/1xBvZ3RoRffTMy5guj6uHsH57f_CHkSdK/view?usp=drive_link"
           title="Intro to cyber"
         />
-         <Certificate
+        <Certificate
           imageSrc={linux.src}
           altText="Linux Certificate"
           link="https://drive.google.com/file/d/194nO9GBd1m9RvXzx44U5332iyIMMPHUB/view?usp=drive_link"
           title="Linux Fundamentals"
         />
-         <Certificate
+        <Certificate
           imageSrc={python.src}
           altText="Python certificate"
           link="https://drive.google.com/file/d/148_noP-pcXrpPd0hUvAaywj_CWNbSKga/view?usp=drive_link"
@@ -50,3 +54,4 @@ const CertficatePage = () => {
 };
 
 export default CertficatePage;
+

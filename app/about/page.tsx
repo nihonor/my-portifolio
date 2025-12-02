@@ -1,23 +1,30 @@
 import React from "react";
+import SectionHeader from "@/components/SectionHeader";
 
 const page = () => {
   return (
-    <div className="md:mx-48 md:mr-64">
-      <h1 className="text-4xl">💬</h1>
-      <h1 className="text-4xl font-bold text-subhead">🆎About Me</h1>
-      <div className="">
-        <p className="py-4">
-          I’m Niyitanga Honore, a cybersecurity enthusiast and full-stack
+    <div className="md:mx-48 md:mr-64 animate-fade-in">
+      <SectionHeader
+        emoji="💬"
+        title="About Me"
+        gradientFrom="from-purple-600"
+        gradientTo="to-blue-600"
+      />
+
+      <div className="space-y-6 text-gray-700 leading-relaxed">
+        <p className="text-lg">
+          I'm <span className="font-semibold text-purple-600">Niyitanga Honore</span>, a cybersecurity enthusiast and full-stack
           developer with a passion for securing digital systems and building
-          efficient web applications. My expertise lies in penetration testing,
-          ethical hacking, and malware analysis, where I analyze system
+          efficient web applications. My expertise lies in <span className="font-semibold text-blue-600">penetration testing</span>,
+          <span className="font-semibold text-purple-600"> ethical hacking</span>, and <span className="font-semibold text-cyan-600">malware analysis</span>, where I analyze system
           vulnerabilities, investigate attack vectors, and develop
           countermeasures to enhance security. I have hands-on experience with
-          tools like Metasploit, Sysmon, and Windows event log analysis, and I’m
+          tools like Metasploit, Sysmon, and Windows event log analysis, and I'm
           always exploring new ways to strengthen digital defenses.
         </p>
-        <p>
-          As a developer, I specialize in React, Node.js, and Next.js, creating
+
+        <p className="text-lg">
+          As a developer, I specialize in <span className="font-semibold text-blue-600">React</span>, <span className="font-semibold text-green-600">Node.js</span>, and <span className="font-semibold text-purple-600">Next.js</span>, creating
           modern and scalable applications. I enjoy working on backend
           optimizations, database management, and security-focused web
           development, ensuring that applications are both performant and
@@ -27,19 +34,21 @@ const page = () => {
           and troubleshooting networking challenges, making me adept at both
           offensive and defensive security strategies.
         </p>
-        <p className="py-4">
-          Beyond my technical skills, I’m passionate about teaching and sharing
-          knowledge. I’ve designed a one-hour Python for cybersecurity crash
+
+        <p className="text-lg">
+          Beyond my technical skills, I'm passionate about <span className="font-semibold text-orange-600">teaching and sharing
+            knowledge</span>. I've designed a one-hour Python for cybersecurity crash
           course, covering essential programming concepts with a
           security-focused approach. I love breaking down complex topics into
           digestible lessons, helping others understand the importance of secure
           coding and system hardening.
         </p>
-        <p>
-          I thrive on solving challenges, whether it’s exploiting a vulnerable
-          machine, analyzing malware behavior, or optimizing a web application’s
-          security architecture. My goal is to bridge the gap between
-          development and cybersecurity, ensuring that every system I work on is
+
+        <p className="text-lg">
+          I thrive on solving challenges, whether it's exploiting a vulnerable
+          machine, analyzing malware behavior, or optimizing a web application's
+          security architecture. My goal is to <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">bridge the gap between
+            development and cybersecurity</span>, ensuring that every system I work on is
           both functional and resilient.
         </p>
       </div>

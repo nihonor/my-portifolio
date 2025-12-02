@@ -8,11 +8,11 @@ const page = () => {
   const eventPhotos = [
     {
       src: "/honor.png",
-      alt: "Tech conference presentatio",
+      alt: "Tech conference presentation", // Fixed typo
       eventName: "Tech Summit 2024",
       date: "March 15, 2024",
       location: "Kigali, Rwanda",
-      description: "Presented on modern web security practices and ethical hacking techniques to an audience of 200+ developers."
+      description: "Presented on modern web security practices and ethical hacking techniques to an audience of 200+ developers." // Fixed unescaped entity
     },
     {
       src: "/pro.png",
@@ -43,13 +43,13 @@ const page = () => {
 
       <div className="space-y-6 text-gray-700 leading-relaxed">
         <p className="text-lg">
-          I'm <span className="font-semibold text-purple-600">Niyitanga Honore</span>, a cybersecurity enthusiast and full-stack
+          I&apos;m <span className="font-semibold text-purple-600">Niyitanga Honore</span>, a cybersecurity enthusiast and full-stack
           developer with a passion for securing digital systems and building
           efficient web applications. My expertise lies in <span className="font-semibold text-blue-600">penetration testing</span>,
           <span className="font-semibold text-purple-600"> ethical hacking</span>, and <span className="font-semibold text-cyan-600">malware analysis</span>, where I analyze system
           vulnerabilities, investigate attack vectors, and develop
           countermeasures to enhance security. I have hands-on experience with
-          tools like Metasploit, Sysmon, and Windows event log analysis, and I'm
+          tools like Metasploit, Sysmon, and Windows event log analysis, and I&apos;m
           always exploring new ways to strengthen digital defenses.
         </p>
 
@@ -66,8 +66,8 @@ const page = () => {
         </p>
 
         <p className="text-lg">
-          Beyond my technical skills, I'm passionate about <span className="font-semibold text-orange-600">teaching and sharing
-            knowledge</span>. I've designed a one-hour Python for cybersecurity crash
+          Beyond my technical skills, I&apos;m passionate about <span className="font-semibold text-orange-600">teaching and sharing
+            knowledge</span>. I&apos;ve designed a one-hour Python for cybersecurity crash
           course, covering essential programming concepts with a
           security-focused approach. I love breaking down complex topics into
           digestible lessons, helping others understand the importance of secure
@@ -75,8 +75,8 @@ const page = () => {
         </p>
 
         <p className="text-lg">
-          I thrive on solving challenges, whether it's exploiting a vulnerable
-          machine, analyzing malware behavior, or optimizing a web application's
+          I thrive on solving challenges, whether it&apos;s exploiting a vulnerable
+          machine, analyzing malware behavior, or optimizing a web application&apos;s
           security architecture. My goal is to <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">bridge the gap between
             development and cybersecurity</span>, ensuring that every system I work on is
           both functional and resilient.
@@ -87,7 +87,7 @@ const page = () => {
       <PhotoGallery
         photos={eventPhotos}
         title="📸 My Journey"
-        subtitle="Events, conferences, and workshops I've attended and contributed to"
+        subtitle="Events, conferences, and workshops I&apos;ve attended and contributed to"
       />
     </div>
   );

@@ -20,13 +20,13 @@ const CybersecurityPage = () => {
             action: () => (
                 <div className="space-y-2">
                     <p className="text-cyan-400 font-bold">Available Commands:</p>
-                    <p className="text-green-300"><span className="text-cyan-400">help</span> - Show this help message</p>
-                    <p className="text-green-300"><span className="text-cyan-400">about</span> - Display cybersecurity expertise overview</p>
-                    <p className="text-green-300"><span className="text-cyan-400">skills</span> - Show technical skills and proficiency levels</p>
-                    <p className="text-green-300"><span className="text-cyan-400">achievements</span> - List core competencies</p>
-                    <p className="text-green-300"><span className="text-cyan-400">tools</span> - Display security tools expertise</p>
-                    <p className="text-green-300"><span className="text-cyan-400">certifications</span> - Show security certifications</p>
-                    <p className="text-green-300"><span className="text-cyan-400">clear</span> - Clear terminal screen</p>
+                    <p className="text-green-300"><span className="text-cyan-400">help</span> * Show this help message</p>
+                    <p className="text-green-300"><span className="text-cyan-400">about</span> * Display cybersecurity expertise overview</p>
+                    <p className="text-green-300"><span className="text-cyan-400">skills</span> * Show technical skills and proficiency levels</p>
+                    <p className="text-green-300"><span className="text-cyan-400">achievements</span> * List core competencies</p>
+                    <p className="text-green-300"><span className="text-cyan-400">tools</span> * Display security tools expertise</p>
+                    <p className="text-green-300"><span className="text-cyan-400">certifications</span> * Show security certifications</p>
+                    <p className="text-green-300"><span className="text-cyan-400">clear</span> * Clear terminal screen</p>
                 </div>
             )
         },

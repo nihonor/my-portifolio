@@ -6,7 +6,7 @@ export default function Home() {
       title: "Dental Clinic",
       description: "A web app for managing a dental clinic.",
       img: "/medi.png",
-      link: "https://example.com/dental-clinic",
+      link: "https://dental-clinic-hon.vercel.app/",
       technologies: ["Next.js", "Tailwind CSS", "Node.js", "CSS"],
     },
     {

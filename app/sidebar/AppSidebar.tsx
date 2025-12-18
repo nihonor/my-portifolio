@@ -14,6 +14,7 @@ import { useTheme } from "@/contexts/ThemeContext";
 import {
   BookText,
   BriefcaseBusiness,
+  FileText,
   Github,
   MessageSquareText,
   Microchip,
@@ -56,6 +57,11 @@ const items = [
     title: "Tech stacks",
     url: "/techstack",
     icon: Microchip,
+  },
+  {
+    title: "Resume",
+    url: "/resume",
+    icon: FileText,
   },
 ];
 

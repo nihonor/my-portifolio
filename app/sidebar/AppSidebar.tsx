@@ -24,7 +24,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { title } from "node:process";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 // Menu items
 const items = [
@@ -67,9 +68,9 @@ const items = [
 
 const socialMedia = [
   {
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/niyitanga-honore",
-    icon: FaLinkedin,
+    title: "Instagram",
+    url: "https://www.instagram.com/nihonor",
+    icon: FaInstagram,
   },
   {
     title: "Github",

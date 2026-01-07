@@ -29,6 +29,19 @@ export default function Home() {
         "TailwindCSS"
       ],
     },
+    {
+      title: "Perfect Journal",
+      description:
+        "A comprehensive trading journal platform for forex traders to record, analyze, and improve their trading performance.",
+      img: "/forex.png",
+      link: "https://my-journal-front.vercel.app/",
+      technologies: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Chart.js"
+      ],
+    },
   ];
 
   return (

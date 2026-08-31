@@ -11,6 +11,7 @@ import mongo from "../../public/mongo.jpg";
 import java from "../../public/jav.webp";
 import python from "../../public/pytho.jpg";
 import web3 from "../../public/globe.svg";
+import solidity from "../../public/sol.png";
 import SectionHeader from "@/components/SectionHeader";
 
 const TechStack = () => {
@@ -34,6 +35,7 @@ const TechStack = () => {
         <Tech image={java} name="Java" proficiency={90} />
         <Tech image={python} name="Python" proficiency={90} />
         <Tech image={web3} name="Web3" proficiency={90} />
+        <Tech image={solidity} name="Solidity" proficiency={85} />
       </div>
     </div>
   );

@@ -25,11 +25,11 @@ const TechStack = () => {
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Tech image={react} name="Reactjs" proficiency={83} />
-        <Tech image={Node} name="Nodejs" proficiency={80} />
+        <Tech image={react} name="Reactjs" proficiency={90} />
+        <Tech image={Node} name="Nodejs" proficiency={90} />
         <Tech image={js} name="Javascript" proficiency={92} />
-        <Tech image={express} name="Expressjs" proficiency={73} />
-        <Tech image={next} name="Nextjs" proficiency={73} />
+        <Tech image={express} name="Expressjs" proficiency={90} />
+        <Tech image={next} name="Nextjs" proficiency={90} />
         <Tech image={c} name="C++" proficiency={70} />
         <Tech image={mongo} name="MongoDB" proficiency={90} />
         <Tech image={java} name="Java" proficiency={90} />

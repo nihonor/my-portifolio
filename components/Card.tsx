@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Github, ExternalLink } from "lucide-react";
 
 interface CardItems {
@@ -19,9 +20,11 @@ const Card = ({ title, description, img, technologies, link, githubLink }: CardI
       {/* Large Image Preview */}
       <div className="lg:w-2/5 relative overflow-hidden rounded-lg bg-gradient-to-br from-blue-100 to-teal-100 p-3">
         <div className="relative overflow-hidden rounded-lg shadow-xl">
-          <img
+          <Image
             src={img}
             alt={`${title} project`}
+            width={800}
+            height={450}
             className="w-full h-auto object-cover rounded-lg"
           />
         </div>

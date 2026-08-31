@@ -12,6 +12,13 @@ const ProjectPage = () => {
       technologies: ["Blockchain", "Web3"],
     },
     {
+      title: "Forticore",
+      description: "An automated cybersecurity tool designed to identify web application vulnerabilities. It provides comprehensive security testing, scanning, and reporting to help developers detect weaknesses early. Proudly won 3rd place in the 2024 national TVET RCA Hackathon.",
+      img: "/fort.png",
+      link: "https://forticore.innov.rw/",
+      technologies: ["Cybersecurity", "React", "Node.js", "Python"],
+    },
+    {
       title: "Dental Clinic",
       description: "A web app for managing a dental clinic.",
       img: "/medi.png",

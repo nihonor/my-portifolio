@@ -43,7 +43,7 @@ const Card = ({ title, description, img, technologies, link, githubLink }: CardI
 
         {/* Description */}
         <div className="bg-white rounded-lg p-4 shadow-md mb-4">
-          <p className="text-sm text-gray-700 leading-relaxed">
+          <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
             {description}
           </p>
         </div>

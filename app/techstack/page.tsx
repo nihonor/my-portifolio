@@ -9,6 +9,8 @@ import next from "../../public/next.png";
 import c from "../../public/c.png";
 import mongo from "../../public/mongo.jpg";
 import java from "../../public/jav.webp";
+import python from "../../public/pytho.jpg";
+import web3 from "../../public/globe.svg";
 import SectionHeader from "@/components/SectionHeader";
 
 const TechStack = () => {
@@ -29,7 +31,9 @@ const TechStack = () => {
         <Tech image={next} name="Nextjs" proficiency={73} />
         <Tech image={c} name="C++" proficiency={70} />
         <Tech image={mongo} name="MongoDB" proficiency={90} />
-        <Tech image={java} name="Java" proficiency={60} />
+        <Tech image={java} name="Java" proficiency={90} />
+        <Tech image={python} name="Python" proficiency={90} />
+        <Tech image={web3} name="Web3" proficiency={90} />
       </div>
     </div>
   );

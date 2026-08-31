@@ -5,17 +5,24 @@ import SectionHeader from "@/components/SectionHeader";
 const ProjectPage = () => {
   const projectCards = [
     {
+      title: "eTICORA",
+      description: "A secure digital ticketing platform for events in Rwanda. Built on the Polygon blockchain, it provides verifiable, forgery-proof tickets with seamless mobile payments and WhatsApp delivery.",
+      img: "/eti.png",
+      link: "https://www.eticora.com/",
+      technologies: ["Blockchain", "Web3"],
+    },
+    {
       title: "Dental Clinic",
       description: "A web app for managing a dental clinic.",
       img: "/medi.png",
-      link: "https://example.com/dental-clinic",
+      link: "https://dental-clinic-hon.vercel.app/",
       technologies: ["Next.js", "Tailwind CSS", "Node.js", "CSS"],
     },
     {
       title: "Hospital MS",
       description: "A platform that helps in managing doctors and patients.",
       img: "/hospital.png",
-      link: "https://example.com/e-commerce",
+      link: "https://github.com/nihonor/hospital_front",
       technologies: ["React", "Express.js", "MongoDB", "Stripe API"],
     },
     {
@@ -23,7 +30,7 @@ const ProjectPage = () => {
       description:
         "A platform where you can make orders at a certain restaurant",
       img: "/image.png",
-      link: "https://example.com/e-commerce",
+      link: "https://github.com/nihonor/supamenu-backend",
       technologies: [
         "React",
         "Express.js",
@@ -36,7 +43,7 @@ const ProjectPage = () => {
       description:
         "A comprehensive trading journal platform for forex traders to record, analyze, and improve their trading performance.",
       img: "/forex.png",
-      link: "https://my-journal-front.vercel.app/",
+      link: "https://github.com/nihonor/my-journal-back",
       technologies: [
         "React",
         "Node.js",

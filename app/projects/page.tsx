@@ -63,7 +63,7 @@ const ProjectPage = () => {
       description:
         "A scalable RESTful travel booking engine for managing flight and hotel reservations end-to-end. Features JWT authentication, role-based access control (RBAC), and an admin panel with full CRUD over inventory and users. Includes a 10% commission-based pricing engine and QR-code digital tickets and receipts for booking verification.",
       img: "/travel.png",
-      link: "https://github.com/nihonor",
+      link: "https://tm-travels.com/",
       technologies: [
         "Node.js",
         "Express.js",
@@ -72,6 +72,22 @@ const ProjectPage = () => {
         "Tailwind CSS",
         "JWT",
       ],
+    },
+    {
+      title: "SmartMotos Backend API",
+      description:
+        "A low-latency Python backend API powering a complete motorbike ride-hailing mobile solution, with real-time demand tracking and rider-driver coordination. Endpoints are secured with stateless JWT authentication, and Flutterwave payment processing automates fare settlements.",
+      img: "/globe.svg",
+      link: "https://github.com/nihonor",
+      technologies: ["Python", "Flask", "FastAPI", "JWT", "Flutterwave API"],
+    },
+    {
+      title: "HaloMobileApp - Parental Control Platform",
+      description:
+        "An AI-powered parental-control mobile platform combining intelligent real-time content filtering with customizable application time limits to protect children online.",
+      img: "/globe.svg",
+      link: "https://github.com/nihonor",
+      technologies: ["AI", "Mobile App", "Content Filtering"],
     },
   ];
 

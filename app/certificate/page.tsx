@@ -19,6 +19,18 @@ const CertficatePage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Certificate
+          imageSrc="/picoctf-cert.png"
+          altText="picoCTF Africa leaderboard certificate"
+          link="/picoctf-cert.pdf"
+          title="primeCTF-Africa 2026 (1st, Africa Leaderboard)"
+        />
+        <Certificate
+          imageSrc="/hackathon-certificate.png"
+          altText="Hackathon award certificate"
+          link="/hackathon-certificate.pdf"
+          title="RCA Hackathon 2025 (3rd Place)"
+        />
+        <Certificate
           imageSrc={coursera.src}
           altText="Coursera certificate"
           link="https://coursera.org/share/7c680816af7ccc17b930207090faf30b"

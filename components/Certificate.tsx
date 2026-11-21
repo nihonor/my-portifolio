@@ -25,6 +25,7 @@ const Certificate: React.FC<CertificateProps> = ({
           alt={altText}
           width={450}
           height={400}
+          className="w-full h-auto"
         />
       </div>
 

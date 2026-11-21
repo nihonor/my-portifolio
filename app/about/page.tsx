@@ -15,12 +15,12 @@ const page = () => {
       description: "Our team won the Tekana Online Cyber Challenge."
     },
     {
-      src: "/pro.png",
-      alt: "Cybersecurity workshop",
-      eventName: "CyberSec Workshop",
-      date: "January 20, 2024",
-      location: "Innovation Hub, Kigali",
-      description: "Led a hands-on workshop on penetration testing and vulnerability assessment for aspiring security professionals."
+      src: "/picoctf.png",
+      alt: "picoCTF logo",
+      eventName: "picoCTF Challenge",
+      date: "March 9-19, 2026",
+      location: "Online",
+      description: "Competed in picoCTF and won the African leaderboard."
     },
     {
       src: "/hack.png",

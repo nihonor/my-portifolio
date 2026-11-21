@@ -58,6 +58,21 @@ const ProjectPage = () => {
         "Chart.js"
       ],
     },
+    {
+      title: "Travel Booking Engine",
+      description:
+        "A scalable RESTful travel booking engine for managing flight and hotel reservations end-to-end. Features JWT authentication, role-based access control (RBAC), and an admin panel with full CRUD over inventory and users. Includes a 10% commission-based pricing engine and QR-code digital tickets and receipts for booking verification.",
+      img: "/travel.png",
+      link: "https://github.com/nihonor",
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Tailwind CSS",
+        "JWT",
+      ],
+    },
   ];
 
   return (

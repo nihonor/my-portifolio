@@ -7,12 +7,12 @@ const page = () => {
   // Replace these with your actual event photos and details
   const eventPhotos = [
     {
-      src: "/honor.png",
-      alt: "Tech conference presentation", // Fixed typo
-      eventName: "Tech Summit 2024",
-      date: "March 15, 2024",
-      location: "Kigali, Rwanda",
-      description: "Presented on modern web security practices and ethical hacking techniques to an audience of 200+ developers." // Fixed unescaped entity
+      src: "/tekana.png",
+      alt: "Tekana Online Cyber Challenge award ceremony",
+      eventName: "Tekana Online Cyber Challenge",
+      date: "November 5, 2026",
+      location: "Online",
+      description: "Our team won the Tekana Online Cyber Challenge."
     },
     {
       src: "/pro.png",
